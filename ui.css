@@ -1,0 +1,135 @@
+body {
+	padding: 0px;
+	margin: 0px;
+}
+
+#lyrow,
+#lyrow input,
+#lyrow textarea {
+	font-size: 12px;
+	font-family: 'Microsoft YaHei', '微软雅黑', MicrosoftJhengHei, '华文细黑', STHeiti, MingLiu;
+}
+
+#lyrow {
+	height: 100vh;
+	width: 100vw;
+}
+
+#lyrow div {
+	min-height: 18px;
+}
+
+#lyrow input,
+#lyrow textarea {
+	border: rgb(235, 235, 235) 1px solid;
+	border-radius: 3px;
+	padding: 5px 8px;
+	outline: 0;
+}
+
+#lyrow input:hover,
+#lyrow textarea:hover {
+	border: 1px solid #6bc1f2;
+}
+
+#lyrow .header {
+	width: 100%;
+	height: 40px !important;
+	position: relative;
+}
+
+#lyrow .location {
+	width: 100%;
+	height: 38px !important;
+	border-top: rgba(0, 0, 0, 1) solid 1px !important;
+	border-bottom: rgba(0, 0, 0, 1) solid 1px !important;
+}
+
+#lyrow .inner {
+	width: 100%;
+	height: calc(100% - 80px);
+	position: absolute;
+	bottom: 0px;
+	border: none;
+	overflow: scroll;
+}
+
+#lyrow .nlogo {
+	height: 100%;
+	float: left;
+	position: absolute;
+}
+
+#lyrow .ntit {
+	width: 235px !important;
+	height: 100%;
+	display: inline-block !important;
+	font-size: 22px;
+	vertical-align: top;
+	text-align: left;
+	float: left;
+	position: absolute;
+	left: 40px;
+}
+
+#lyrow .pcard {
+	margin: 3px 3px 0 3px;
+	width: 144px !important;
+	height: 36px !important;
+	border-top: rgba(0, 0, 0, 1) solid 1px !important;
+	border-left: rgba(0, 0, 0, 1) solid 1px !important;
+	border-right: rgba(0, 0, 0, 1) solid 1px !important;
+	float: left;
+	position: relative;
+	left: 255px;
+}
+
+#lyrow .ufc {
+	background-color: rgba(0, 0, 0, 0.08);
+}
+
+#lyrow .fc {
+	background: linear-gradient(0deg, rgba(255, 255, 255, 1) 61%, rgba(232, 232, 232, 1) 100%);
+	height: 37px !important;
+}
+
+#lyrow .picon {
+	height: 35px !important;
+}
+
+#lyrow .ptit {
+	height: 100%;
+	width: calc(100% - 46px);
+	vertical-align: top;
+	color: rgba(0, 0, 0, 1);
+	font-size: 14px;
+	text-overflow: ellipsis;
+	overflow-y: hidden;
+	overflow-x: hidden;
+	white-space: nowrap;
+	position: absolute;
+}
+
+#lyrow .pclose {
+	float: right;
+	margin: 12px 5px 0 0;
+}
+
+#lyrow .preload {
+	margin: 12px 0 0 15px;
+	float: left;
+	position: absolute;
+}
+
+#lyrow .purl {
+	height: calc(100% - 12px);
+	margin: 5px 5px 5px 35px;
+	width: calc(100% - 55px);
+	border: rgba(0, 0, 0, 1) solid 1px;
+	padding: 0 5px 0 5px;
+	overflow-x: auto;
+	overflow-y: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	text-align: left;
+}

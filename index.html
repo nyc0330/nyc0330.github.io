@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+	<head>
+		<title>nwwb</title>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="./ui.css">
+		<link rel="stylesheet" href="../fontawesome-free-6.1.1-web/css/fontawesome.css">
+	</head>
+	<body>
+		<div id="lyrow">
+			<div class="header">
+				<img src="http://180.166.0.98:12349/favicon.ico" class="nlogo">
+				<span class="ntit" onclick="newPage('http://180.166.0.98:12349/')">N Web WebBrowser</span>
+			</div>
+			<div class="location">
+				<i class="fas fa-redo preload" data-font="fas fa-redo"> </i>
+				<input type="text" name="input" class="purl" placeholder="enter an url" value=""
+					onkeypress="_keydown()">
+			</div>
+			<iframe class="inner" src=""> </iframe>
+		</div>
+		<script type="text/javascript">
+			navigator.serviceWorker.register('https://180.166.0.98:12349/n_servwr_proj/nwwb/CSP_Broker.js');
+
+			// var prevent_bust = 0;
+			// window.onbeforeunload = function() {
+			// 	prevent_bust++
+			// };
+			// setInterval(function() {
+			// 	if (prevent_bust > 0) {
+			// 		prevent_bust -= 2;
+			// 		window.top.location = 'http://server-which-responds-with-204.com';
+			// 	}
+			// }, 1);
+		</script>
+		<script src="./nt.js"></script>
+	</body>
+</html>
